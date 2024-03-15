@@ -4,3 +4,16 @@ h1 {
     letter-spacing: 3px;
     color: #f8f8ff;
 }
+#weatherContent {
+    display: none;
+}
+
+.navbar {
+    height: 170px;
+}
+
+#searchResults,
+#cityDetail,
+.card {
+    background-color: #707e83;
+}

@@ -66,3 +66,19 @@ function currentCondition(city) {
     });
 });
 }
+
+$("#searchBtn").on("click", function(event) {
+    event.preventDefault();
+
+    var city = $("#enterCity").val().trim();
+    currentCondition(city);
+    if (!searchHistoryList.includes(city)) {
+        searchHistoryList.push(city);
+        var searchedCity = $(`
+            <li class="list-group-item">${city}</li>
+            `);
+        $("#searchHistory").append(searchedCity);
+    };
+    localStorage.setItem("city", JSON.stringify(searchHistoryList));
+    console.log(searchHistoryList);
+});
