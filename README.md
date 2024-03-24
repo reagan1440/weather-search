@@ -37,6 +37,7 @@ For any questions, please contact [reagan1440](https://github.com/reagan1440) vi
 ## links
 
 ### deployed page
+https://reagan1440.github.io/weather-search/
 
 ## repository
 https://github.com/reagan1440/weather-search
